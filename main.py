@@ -1,0 +1,17 @@
+testFunc = None
+try:
+    import moduleA as A
+    testFunc = A.test()
+except ImportError:
+    print("import module A failed")
+
+try:
+    import moduleB as B
+    testFunc = B.test()
+except ImportError:
+    print("import module B failed")
+
+
+if __name__ == "__main__":
+    if testFunc is not None:
+        testFunc()
