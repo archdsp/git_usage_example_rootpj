@@ -1,13 +1,13 @@
 testFunc = None
 try:
-    import moduleA as A
-    testFunc = A.test()
+    import module_a as A
+    testFunc = A.a.test()
 except ImportError:
     print("import module A failed")
 
 try:
-    import moduleB as B
-    testFunc = B.test()
+    import module_b as B
+    testFunc = B.b.test()
 except ImportError:
     print("import module B failed")
 

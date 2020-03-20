@@ -1,0 +1,3 @@
+[submodule "module_a"]
+	path = module_a
+	url = https://github.com/dsparch/module_a.git
